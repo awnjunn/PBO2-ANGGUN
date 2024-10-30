@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class JendelaUtama1 extends javax.swing.JFrame {
+public class JendelaUtama extends javax.swing.JFrame {
 
    List<Mahasiswa> mahasiswa = new ArrayList<>();
     int currentRow = 0;
 //Constructor
-    public JendelaUtama1() {
+    public JendelaUtama() {
         String lookAndFeel = javax.swing.UIManager.getSystemLookAndFeelClassName();
             try {
                 javax.swing.UIManager.setLookAndFeel(lookAndFeel);
@@ -510,20 +510,22 @@ bindData();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JendelaUtama1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JendelaUtama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JendelaUtama1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JendelaUtama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JendelaUtama1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JendelaUtama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JendelaUtama1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JendelaUtama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JendelaUtama1().setVisible(true);
+            new JendelaUtama().setVisible(true);
         });
         
     }
